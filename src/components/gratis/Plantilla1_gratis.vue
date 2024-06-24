@@ -138,7 +138,7 @@
           >
             Sobre el Contenido
             <span
-              class="absolute bottom-0 left-0 h-[.3vh] w-[10vw] bg-white lg:bg-plantilla1_gratis-300"
+              class="absolute bottom-0 left-0 h-[.3vh] w-[10vw] bg-transparent lg:bg-plantilla1_gratis-300"
             ></span>
           </h2>
       <p class="mb-5 font-light sm:text-xl text-gray-400">
@@ -157,8 +157,8 @@
         ></iframe>
       </div>
     </section>
-    <section class="grid grid-cols-2 bg-white">
-      <div class="col-span-2 grid md:text-start text-center justify-center items-center md:col-span-1 px-2 lg:px-20">
+    <section class="grid grid-cols-2 bg-white pt-10 lg:py-0">
+      <div class="col-span-2 grid lg:text-start text-center justify-center items-center lg:col-span-1 px-2 lg:px-20">
         <div class="grid px-2">
           <h2
             class="pb-2 relative text-plantilla1_gratis-500 font-semibold text-4xl mb-4 border-b-[.1em] lg:border-transparent border-plantilla1_gratis-300"
@@ -175,7 +175,7 @@
           </p>
         </div>
       </div>
-      <div class="col-span-2 md:col-span-1 flex items-center ">
+      <div class="col-span-2 lg:col-span-1 flex items-center ">
         <img
           src="https://marketing4ecommerce.net/wp-content/uploads/2017/02/salarios-en-marketing-informe.jpg"
           alt=""
