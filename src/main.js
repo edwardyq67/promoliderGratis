@@ -10,7 +10,9 @@ const routes = [
   { path: '/', component: ()=>import("./components/Index.vue") },
 
 // Plantilla gratis
-  {path: '/plantilla1_gratis', component: ()=>import("./components/gratis/Plantilla1_gratis.vue")}
+  {path: '/plantilla0_gratis', component: ()=>import("./components/gratis/Plantilla0_gratis.vue")},
+  {path: '/plantilla3_gratis', component: ()=>import("./components/gratis/Plantilla3_gratis.vue")},
+  {path: '/plantilla4_gratis', component: ()=>import("./components/gratis/Plantilla4_gratis.vue")}
 ];
 
 const router = createRouter({
