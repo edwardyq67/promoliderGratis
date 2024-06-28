@@ -14,7 +14,7 @@ const changeColor1 = () => {
 const changeColor2 = () => {
   document.documentElement.style.setProperty("--color1", "#213A59");
   document.documentElement.style.setProperty("--color2", "#3784DC");
-  document.documentElement.style.setProperty("--color3", "#92B2D2");
+  document.documentElement.style.setProperty("--color3", "#031930");
   document.documentElement.style.setProperty("--color4", "#5E8AC3");
   document.documentElement.style.setProperty("--color5", "#758AA5");
   document.documentElement.style.setProperty("--color6", "#ED7A68");
@@ -256,7 +256,7 @@ const changeColor4 = () => {
   <section :style="{ backgroundColor: 'var(--color4)' }" class="px-2 md:mx-0">
     <div class="grid container mx-auto items-center gap-5 py-10 text-center">
       <div
-        :style="{ color: 'var(--color2)' }"
+        :style="{ color: 'var(--texto)' }"
         class="text-center flex gap-5 justify-center items-end text-4xl"
       >
         <i class="fa-solid fa-mobile-screen"></i>
@@ -351,12 +351,13 @@ const changeColor4 = () => {
 
 <style lang="css">
 :root {
-  --color1: #cbe3e7;
-  --color2: #0691b0;
-  --color3: #bfb7b5;
-  --color4: #e7e6e4;
-  --color5: #758aa5;
-  --color6: #908b92;
-  --texto: #908b92;
+  --color1: #213A59;
+  --color2: #3784DC;
+  --color3: #031930;
+  --color4: #5E8AC3;
+  --color5: #758AA5;
+  --color6: #FFFFFF;
+  --color7: #92B2D2;
+  --texto: #FFFFFF;
 }
 </style>
