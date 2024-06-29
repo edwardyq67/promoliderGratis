@@ -9,6 +9,14 @@ const changeColor2 = () => {
   document.documentElement.style.setProperty("--P2color5", "#758AA5");
   document.documentElement.style.setProperty("--P2color6", "#ED7A68");
   document.documentElement.style.setProperty("--P2texto", "#ffff");
+
+  function toggleAccordion(id) {
+      const content = document.getElementById(id);
+      const icon = document.getElementById(`icon-${id}`);
+      content.classList.toggle('active');
+      icon.classList.toggle('fa-chevron-down');
+      icon.classList.toggle('fa-chevron-up');
+    }
 };
 
 </script>
@@ -226,63 +234,63 @@ const changeColor2 = () => {
     </div>
   </section>
     <!-- Preguntas Frecuentes -->
-  <section :style="{ backgroundColor: 'var(--P2color3)' }" class="px-2 md:mx-0">
+    <section :style="{ backgroundColor: 'var(--color3)' }" class="px-2 md:mx-0">
     <div class="grid container mx-auto items-center gap-5 py-20">
-      <h2
-        :style="{ color: 'var(--P2texto)' , borderBottomColor: '--P2texto'}"
+      <h4
+        :style="{ color: 'var(--texto)' , borderBottomColor: '--texto'}"
         class="text-center text-4xl lg:text-6xl font-bold mb-5 pb-6 border-b-2 mx-auto"
       >
         PREGUNTAS FRECUENTES
-      </h2>
+      </h4>
       <div
-        class="text-justify py-5 px-10 grid gap-3"
+        class="text-justify py-5 px-10 grid gap-3 text-xl"
       >
-        <div :style="{ color: 'var(--P2texto)' }" class="grid grid-cols-2 container mx-auto items-center gap-10 py-10">
-            <h2 :style="{ color: 'var(--P2texto)' }" class="text-3xl font-semibold">
+        <div @click="toggleAccordion('faq1')" :style="{ color: 'var(--texto)' }" class="grid grid-cols-2 container mx-auto items-center gap-10 py-10 cursor-pointer">
+            <h4 :style="{ color: 'var(--texto)' }" class="text-3xl font-semibold">
                 ¿Para quién es este producto?
-            </h2>
-            <i class="fa-solid fa-chevron-up text-3xl flex justify-end"></i>
+            </h4>
+            <i id="icon-faq1" class="fa-solid fa-chevron-up text-3xl flex justify-end"></i>
         </div>
-        <p :style="{ color: 'var(--P2texto)' }" class="text-xl">
+        <p id="faq1" :style="{ color: 'var(--texto)' }" class="text-xl accordion-content">
             Quién es el público objetivo de tu producto.
         </p>
       </div>
       <div
-        class="text-justify py-5 px-10 grid gap-3"
+        class="text-justify py-5 px-10 grid gap-3 text-xl"
       >
-        <div :style="{ color: 'var(--P2texto)' }" class="grid grid-cols-2 container mx-auto items-center gap-10 py-10">
-            <h2 :style="{ color: 'var(--P2texto)' }" class="text-3xl font-semibold">
+        <div @click="toggleAccordion('faq2')" :style="{ color: 'var(--texto)' }" class="grid grid-cols-2 container mx-auto items-center gap-10 py-10 cursor-pointer">
+            <h4 :style="{ color: 'var(--texto)' }" class="text-3xl font-semibold">
                 ¿Cómo funciona el 'Plazo de Garantía'?
-            </h2>
-            <i class="fa-solid fa-chevron-up text-3xl flex justify-end"></i>
+            </h4>
+            <i id="icon-faq2" class="fa-solid fa-chevron-up text-3xl flex justify-end"></i>
         </div>
-        <p :style="{ color: 'var(--P2texto)' }" class="text-xl">
+        <p id="faq2" :style="{ color: 'var(--texto)' }" class="text-xl accordion-content">
             El Plazo de Garantía es el periodo que tienes para pedir el reembolso integral del valor de tu compra, en caso de que el producto no sea satisfactorio. 
         </p>
       </div>
       <div
-        class="text-justify py-5 px-10 grid gap-3"
+        class="text-justify py-5 px-10 grid gap-3 text-xl" 
       >
-        <div :style="{ color: 'var(--P2texto)' }" class="grid grid-cols-2 container mx-auto items-center gap-10 py-10">
-            <h2 :style="{ color: 'var(--P2texto)' }" class="text-3xl font-semibold">
+        <div @click="toggleAccordion('faq3')" :style="{ color: 'var(--texto)' }" class="grid grid-cols-2 container mx-auto items-center gap-10 py-10 cursor-pointer">
+            <h4 :style="{ color: 'var(--texto)' }" class="text-3xl font-semibold">
                 ¿Qué es y cómo funciona el Certificado de Conclusión digital?
-            </h2>
-            <i class="fa-solid fa-chevron-up text-3xl flex justify-end"></i>
+            </h4>
+            <i id="icon-faq3" class="fa-solid fa-chevron-up text-3xl flex justify-end"></i>
         </div>
-        <p :style="{ color: 'var(--P2texto)' }" class="text-xl">
+        <p id="faq3" :style="{ color: 'var(--texto)' }" class="text-xl accordion-content">
             Algunos cursos online ofrecen un certificado digital de conclusión. Los alumnos pueden emitir este certificado dentro del curso o ponerse en contacto con el Autor o Autora. Estos certificados pueden compartirse en redes sociales como LinkedIn e incluirse en informaciones curriculares.
         </p>
       </div>
       <div
-        class="text-justify py-5 px-10 grid gap-3"
+        class="text-justify py-5 px-10 grid gap-3 text-xl"
       >
-        <div :style="{ color: 'var(--P2texto)' }" class="grid grid-cols-2 container mx-auto items-center gap-10 py-10">
-            <h2 :style="{ color: 'var(--P2texto)' }" class="text-3xl font-semibold">
+        <div @click="toggleAccordion('faq4')" :style="{ color: 'var(--texto)' }" class="grid grid-cols-2 container mx-auto items-center gap-10 py-10 cursor-pointer">
+            <h4 :style="{ color: 'var(--texto)' }" class="text-3xl font-semibold">
                 ¿Cómo hago para comprar?
-            </h2>
-            <i class="fa-solid fa-chevron-up text-3xl flex justify-end"></i>
+            </h4>
+            <i id="icon-faq4" class="fa-solid fa-chevron-up text-3xl flex justify-end"></i>
         </div>
-        <p :style="{ color: 'var(--P2texto)' }" class="text-xl">
+        <p id="faq4" :style="{ color: 'var(--texto)' }" class="text-xl accordion-content">
             Para comprar este curso, haz clic en el botón “Comprar ahora”. Recuerda que no todos los productos estarán siempre disponibles para su compra. Es posible que el Productor esté preparando un nuevo grupo todavía sin inscripciones abiertas.
         </p>
       </div>
@@ -300,4 +308,12 @@ const changeColor2 = () => {
   --P2color6: #758AA5;
   --P2texto: #FFFFFF;
 }
+
+.accordion-content {
+      display: none;
+      transition: max-height 0.2s ease-out;
+    }
+    .accordion-content.active {
+      display: block;
+    }
 </style>
